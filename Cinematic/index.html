@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Cinematic</title>
+        <meta content="" name="description" />
+        <meta content="" name="keywords" />
+        <!-- Favicons -->
+        <link href="assets/img/favicon.png" rel="icon" />
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet" />
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+        <!-- Template Main CSS File -->
+        <link href="assets/css/style.css" rel="stylesheet" />
+        <!-- =======================================================
+         * Template Name: TheEvent - v4.0.1
+         * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+         * Author: BootstrapMade.com
+         * License: https://bootstrapmade.com/license/
+         ======================================================== -->
+    </head>
+    <body>
+        <!-- ======= Header ======= -->
+        <header id="header" class="d-flex align-items-center">
+            <div class="container-fluid container-xxl d-flex align-items-center">
+                <div id="logo" class="me-auto">
+                    <!-- Uncomment below if you prefer to use a text logo -->
+                    <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+                    <a href="index.html" class="scrollto"><img src="assets/img/logo.png" alt="" title="" /></a>
+                </div>
+                <nav id="navbar" class="navbar order-last order-lg-0">
+                    <ul>
+                        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                        <li><a class="nav-link scrollto" href="#about">About</a></li>
+                        <li><a class="nav-link scrollto" href="#schedule">Search</a></li>
+                        <li><a class="nav-link scrollto" href="#videos">Videos</a></li>
+                        <li><a class="nav-link scrollto" href="#critic">Critic</a></li>
+                        <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+                        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+                <!-- .navbar -->
+            </div>
+        </header>
+        <!-- End Header -->
+        <!-- ======= Hero Section ======= -->
+        <section id="hero">
+            <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+                <h1 class="mb-4 pb-0">
+                    WELCOME TO A UNIQUE EXPERIENCE AS TO
+                    <span>Films</span>
+                    WITH CINEMATIC
+                </h1>
+                <p class="mb-4 pb-0"></p>
+                <a href="#schedule" class="about-btn scrollto">Search</a>
+            </div>
+        </section>
+        <!-- End Hero Section -->
+        <main id="main">
+            <!-- ======= About Section ======= -->
+            <section id="about">
+                <div class="container" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2>About</h2>
+                            <p>In this Web App you will find a vast library of films for you to have an incredible movie night, and to help you decide what to watch, we still have a critical note for the most discerning.</p>
+                        </div>
+                        <div class="col-lg-3">
+                            
+                        </div>
+                        <div class="col-lg-3">
+                            <h3>Critic</h3>
+                            <p>IMDB</p>
+                            <p>Metacritic</p>
+                            <p>Rotten Tomatoes</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End About Section -->
+            
+            <!-- ======= Schedule Section ======= -->
+            <section href="search" id="schedule" class="section-with-bg">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-header">
+                        <h2>Search a Film:</h2>
+                        <p>The name must be provided in English </p>
+                        <input type="text" name="pesquisaFilme" id="pesquisaFilme" />
+                    </div>
+                    <div>
+                        <button type="button" onclick="consultaFilme()" id="btnPesquisa">Search</button>
+                    </div>
+                    <br />
+                    <br />
+                    <br />
+                    <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#aboutFilm" role="tab" data-bs-toggle="tab">About Film</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#criticBoxOffice" role="tab" data-bs-toggle="tab">Critic/BoxOffice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#poster" role="tab" data-bs-toggle="tab">Poster</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                        <!-- Schdule Day 1 -->
+                        <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="aboutFilm">
+                            <div class="row schedule-item">
+                                <div class="col-md-10">
+                                    <h1 id="nomeDoFilme"></h1>
+                                </div>
+                            </div>
+                            <div class="row schedule-item">
+                                <div class="col-md-2">
+                                    <time>Plot:</time>
+                                </div>
+                                <div class="col-md-10">
+                                    <h4 id="sinopse"></h4>
+                                </div>
+                            </div>
+                            <div class="row schedule-item">
+                                <div class="col-md-2">Actors:</div>
+                                <div class="col-md-10">
+                                    <h4 id="ator1"></h4>
+                                    <h4 id="ator2"></h4>
+                                    <h4 id="ator3"></h4>
+                                    <h4 id="ator4"></h4>
+                                </div>
+                            </div>
+                            <div class="row schedule-item">
+                                <div class="col-md-2">Director:</div>
+                                <div class="col-md-10">
+                                    <h4 id="diretor"></h4>
+                                </div>
+                            </div>
+                            <div class="row schedule-item">
+                                <div class="col-md-2">Genre:</div>
+                                <div class="col-md-10">
+                                    <h4 id="genero"></h4>
+                                </div>
+                            </div>
+                            <div class="row schedule-item">
+                                <div class="col-md-2"><time>Production:</time></div>
+                                <div class="col-md-10">
+                                    <h4 id="produtora"></h4>
+                                </div>
+                            </div>
+                            <div class="row schedule-item">
+                                <div class="col-md-2">Released:</div>
+                                <div class="col-md-10">
+                                    <h4 id="dataLancamento"></h4>
+                                </div>
+                            </div>
+                            <div class="row schedule-item">
+                                <div class="col-md-2">Runtime:</div>
+                                <div class="col-md-10">
+                                    <h4 id="duracaoFilme"></h4>
+                                </div>
+                            </div>
+                            <div class="row schedule-item">
+                                <div class="col-md-2">Language:</div>
+                                <div class="col-md-10">
+                                    <h4 id="idioma"></h4>
+                                </div>
+                            </div>
+                            <div class="row schedule-item">
+                                <div class="col-md-2">Metascore:</div>
+                                <div class="col-md-10">
+                                    <h4 id="metacritica"></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Schdule Day 1 -->
+                        <!-- Schdule Day 2 -->
+                        <div role="tabpanel" class="col-lg-9 tab-pane fade" id="criticBoxOffice">
+                            <div class="row schedule-item">
+                                <div class="col-md-2">IMDB Rating:</div>
+                                <div class="col-md-10">
+                                    <h4 id="ratingIMDB"></h4>
+                                </div>
+                            </div>
+                            <div class="row schedule-item">
+                                <div class="col-md-2">IMDB Votes:</div>
+                                <div class="col-md-10">
+                                    <h4 id="votesIMDB"></h4>
+                                </div>
+                            </div>
+                            <div class="row schedule-item">
+                                <div class="col-md-2">BoxOffice:</div>
+                                <div class="col-md-10">
+                                    <h4 id="bilheteria"></h4>
+                                </div>
+                            </div>
+                            <div class="row schedule-item">
+                                <div class="col-md-2">Awards:</div>
+                                <div class="col-md-10">
+                                    <h4 id="premiacao"></h4>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+
+                    <div role="tabpanel" class="col-lg-9 tab-pane fade" id="poster">
+                            <div class="row schedule-item">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-10">
+                                    <img id="posterFilme" src="" alt="poster Film">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <!-- End Schedule Section -->
+            <div class="section-header">
+                <h2>Soundtrack</h2>
+            </div>
+            <!-- ======= Videos Section ======= -->
+            <section id="videos">
+                <div class="container-fluid venue-gallery-container" data-aos="fade-up" data-aos-delay="100">
+                    <div class="row g-0">
+                        <div class="col-lg-3 col-md-4">
+                            <div class="venue-gallery">
+                               <iframe id="video1" width="350" height="344" src="" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="venue-gallery">
+                                <iframe id="video2" width="350" height="344" src="" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="venue-gallery">
+                               <iframe id="video3" width="350" height="344" src="" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="venue-gallery">
+                               <iframe id="video4" width="350" height="344" src="" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Venue Section -->
+            <!-- ======= Hotels Section ======= -->
+            <section id="critic" class="section-with-bg">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-header">
+                        <h2>Rating</h2>
+                    </div>
+                    <div class="row" data-aos="fade-up" data-aos-delay="100">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="critic">
+                                <div class="critic-img">
+                                    <img src="assets/img/critics/1.jpg" alt="Critic 1" class="img-fluid" />
+                                </div>
+                                <h3>IMDB</h3>
+                                <p id="notaIMDB"></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="critic">
+                                <div class="critic-img">
+                                    <img src="assets/img/critics/2.jpg" alt="Critic 2" class="img-fluid" />
+                                </div>
+                                <h3>Metacritic</h3>
+                                <p id="notaMeta"></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="critic">
+                                <div class="critic-img">
+                                    <img src="assets/img/critics/3.jpg" alt="Critic 3" class="img-fluid" />
+                                </div>
+                                <h3>Rotten Tomatoes</h3>
+                                <p id="notaRotten"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Hotels Section -->
+            <!-- ======= Gallery Section ======= -->
+            <section id="gallery">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-header">
+                        <h2>Gallery</h2>
+                        <p>Some movie suggestions</p>
+                    </div>
+                </div>
+                <div class="gallery-slider swiper-container">
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide">
+                            <a href="assets/img/gallery/1.jpg" class="gallery-lightbox"><img src="assets/img/gallery/1.jpg" class="img-fluid" alt="" /></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="assets/img/gallery/2.jpg" class="gallery-lightbox"><img src="assets/img/gallery/2.jpg" class="img-fluid" alt="" /></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="assets/img/gallery/3.jpg" class="gallery-lightbox"><img src="assets/img/gallery/3.jpg" class="img-fluid" alt="" /></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="assets/img/gallery/4.jpg" class="gallery-lightbox"><img src="assets/img/gallery/4.jpg" class="img-fluid" alt="" /></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="assets/img/gallery/5.jpg" class="gallery-lightbox"><img src="assets/img/gallery/5.jpg" class="img-fluid" alt="" /></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="assets/img/gallery/6.jpg" class="gallery-lightbox"><img src="assets/img/gallery/6.jpg" class="img-fluid" alt="" /></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="assets/img/gallery/7.jpg" class="gallery-lightbox"><img src="assets/img/gallery/7.jpg" class="img-fluid" alt="" /></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="assets/img/gallery/8.jpg" class="gallery-lightbox"><img src="assets/img/gallery/8.jpg" class="img-fluid" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <!-- End Gallery Section -->
+            <!-- ======= Contact Section ======= -->
+            <section id="contact" class="section-bg">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-header">
+                        <h2>Contact Us</h2>
+                        <p>Guilherme Magnus</p>
+                    </div>
+                    <div class="row contact-info">
+                        <div class="col-md-4">
+                            <div class="contact-address">
+                                <i class="bi bi-geo-alt"></i>
+                                <h3>Address</h3>
+                                <address>Barbacena - MG, Brazil</address>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-phone">
+                                <i class="bi bi-phone"></i>
+                                <h3>Phone Number</h3>
+                                <p><a href="tel:+5532984823376">+55 32984823376</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-email">
+                                <i class="bi bi-envelope"></i>
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@example.com">guilhermemagnus@protonmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Contact Section -->
+        </main>
+        <!-- End #main -->
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+            <div class="copyright">&copy; Copyright <strong>Cinematic</strong>. All Rights Reserved</div>
+            <div class="credits">
+            </div>
+        </footer>
+        <!-- End  Footer -->
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        <!-- Vendor JS Files -->
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <!-- Template Main JS File -->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/jquery.js"></script>
+    </body>
+</html>
